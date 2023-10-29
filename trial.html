@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="watch">
+        <div class="secondOne"></div>
+        <div class="minuteOne"></div>
+        <div class="hourOn"></div>
+    </div>
+
+
+    <!-- <script>
+        const secondOne = document.querySelector(".secondOne");
+        const minuteOne = document.querySelector(".minuteOne");
+        const hourOne = document.querySelector(".hourOn");
+
+        const setDate = () => {
+            const now = new Date();
+            const second = now.getSeconds();
+            const secondDegree = ((second / 60) * 360) + 90;
+            secondOne.style.transform = `rotate(${secondDegree}deg)`;
+
+            //for minuyte
+            const minute = now.getMinutes();
+            const minuteDegree = ((minute / 60) * 360) + ((second / 60) * 30) + 90;
+            minuteOne.style.transform = `rotate(${minuteDegree}deg)`;
+
+            //for Hour
+
+            const hour = now.getHours();
+            const hourDegree = ((hour / 12) * 360) + ((minute / 60) * 6) + 90;
+            hourOne.style.transform = `rotate(${hourDegree}deg)`
+        }
+        setInterval(setDate, 1000);
+        setDate();
+    </script> -->
+
+
+</body>
+
+</html>
