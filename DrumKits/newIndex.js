@@ -15,3 +15,11 @@ function playSound() {
 const keys = Array.from(document.querySelectorAll('.key'));
 keys.forEach(key => key.addEventListener('transitioned', removeTransition));
 window.addEventListener('keydown', playSound);
+
+
+
+
+// function myColor() {
+//     let myBody = document.body;
+//     myBody.classList.toggle("newColor")
+// }

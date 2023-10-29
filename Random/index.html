@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="i.css" rel="stylesheet">
+</head>
+
+<body>
+    <h2>Update CSS Variables with <span class='hl'>JS</span></h2>
+    <!-- <div class="controls">
+        <label for="spacing">Spacing</label>
+        <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+        <label for="blur">blur</label>
+        <input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+        <label for="base">Base color</label>
+        <input id="base" type="color" name="base" value="#ffc600">
+    </div> -->
+    <!-- <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500"> -->
+
+    <!-- <script>
+        const inputs = document.querySelectorAll(".controls input");
+        function handleUpdate() {
+            const suffix = this.dataset.sizing || "";
+            document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+        }
+
+        inputs.forEach(input => input.addEventListener("change", handleUpdate));
+        inputs.forEach(input => input.addEventListener("mousemove", handleUpdate))
+    </script> -->
+    <!-- <script>
+        const inputs = document.querySelectorAll('.controls input')
+
+        function handleUpdate() {
+            const suffix = this.dataset.sizing || '';
+            document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+        }
+        inputs.forEach(input => input.addEventListener('change', handleUpdate));
+        inputs.forEach(input.addEventListener('mousemove', handleUpdate));
+    </script> -->
+
+
+    <div class="controls">
+        <label for="spacing">Spacing</label>
+        <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+        <label for="blur">blur</label>
+        <input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+        <label for="base">Base</label>
+        <input id="base" type="color" name="base">
+    </div>
+    <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
+
+    <!-- <script>
+        const control = document.querySelectorAll(".controls");
+        const input = document.querySelectorAll("input");
+
+
+        control.forEach(inputs => inputs.addEventListener('change', handleUpdate));
+        input.forEach(inputs => inputs.addEventListener('mousemove', handleUpdate));
+
+        function handleUpdate() {
+            const suffix = this.dataset.sizing || '';
+            document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+
+        }
+
+
+
+    </script> -->
+
+
+
+    <!-- <script>
+        const control = document.querySelectorAll(".controls");
+        const input = document.querySelectorAll("input");
+
+        control.forEach(syntax => syntax.addEventListener('change', handleUpdate));
+        input.forEach(syntax => syntax.addEventListener('mousemove', handleUpdate));
+
+
+        function handleUpdate() {
+            const getValue = this.dataset.sizing || '';
+            document.documentElement.style.setProperty(`--${this.name}`, this.value + getValue)
+        }
+    </script> -->
+
+
+    <script>
+
+        const myChoice = document.querySelectorAll(".controls");
+        const yourChoice = document.querySelectorAll("input");
+
+        myChoice.forEach(myLove => myLove.addEventListener('change', handleChange));
+        yourChoice.forEach(myLove => myLove.addEventListener('mousemove', handleChange));
+
+
+        function handleChange() {
+            const setMychanges = this.dataset.sizing || '';
+            document.documentElement.style.setProperty(`--${this.name}`, this.value + setMychanges);
+        }
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
